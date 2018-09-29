@@ -5,14 +5,16 @@
  */
 package unitec.primavera;
 
+import org.springframework.data.mongodb.repository.MongoRepository;
+
 /**
  *
  * @author T-107
  */
-public class TarjetaCredito extends Tarjeta implements Pagos{
-    
-    @Override //Garantiza que se escribio bien el metodo pagar() de <<Pagos>>
-    public void pagar() {
-        System.out.println("Pagando Credito");
+public interface RepositorioMensajes {
+    public interface RepositorioMensajes extends MongoRepository<Mensajito, String>{ //<identidad,tipo de ID>
+
     }
-}
+    
+    }
+    

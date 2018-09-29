@@ -9,6 +9,10 @@ package unitec.primavera;
  *
  * @author T-107
  */
-public class TarjetaNomina extends PrimaveraApplication{
+public class TarjetaNomina extends Tarjeta implements Pagos{
     
+    @Override //Garantiza que se escribio bien el metodo pagar() de <<Pagos>>
+    public void pagar() {
+        System.out.println("Pagando Nomina");
+    }
 }
