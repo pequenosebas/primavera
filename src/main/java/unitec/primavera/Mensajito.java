@@ -21,6 +21,18 @@ public class Mensajito {
     private String cuerpo;
     private LocalDate fecha;
 
+    public Mensajito(String id, String titulo, String cuerpo, LocalDate fecha) {
+        this.id = id;
+        this.titulo = titulo;
+        this.cuerpo = cuerpo;
+        this.fecha = fecha;
+    }
+
+    @Override
+    public String toString() {
+        return "Mensajito{" + "id=" + id + ", titulo=" + titulo + ", cuerpo=" + cuerpo + ", fecha=" + fecha + '}';
+    }
+
     //Constructor solo
     public Mensajito() {
     }

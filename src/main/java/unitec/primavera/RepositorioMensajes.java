@@ -5,16 +5,15 @@
  */
 package unitec.primavera;
 
+import java.util.ArrayList;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
  *
  * @author T-107
  */
-public interface RepositorioMensajes {
-    public interface RepositorioMensajes extends MongoRepository<Mensajito, String>{ //<identidad,tipo de ID>
-
-    }
+public interface RepositorioMensajes extends MongoRepository<Mensajito, String>{
+    ArrayList<Mensajito> findByTitulo(String titulo);
+}
     
-    }
     
