@@ -30,7 +30,7 @@ public class PrimaveraApplication implements CommandLineRunner{ //para ejecutar 
         
         //BUSCAMOS TODOS LOS MENSAJES
         //for(Mensajito mensa: repoMensa.findAll()){//FindAll==busca en <Array> de mensajito donde se tienen los datos--- mensa: for mejorado
-            //System.out.println(mensa);//imprimira la direccion de memoria
+        //System.out.println(mensa);//imprimira la direccion de memoria
             
         //BUSCAMOS POR ID
         //System.out.println(repoMensa.findById("5bb41cbc7eb5891d7c18e699").get());
@@ -42,8 +42,10 @@ public class PrimaveraApplication implements CommandLineRunner{ //para ejecutar 
        //repoMensa.save(new Mensajito("malo","yo","topoyiya", LocalDate.now()));
        //System.out.println(repoMensa.findByTitulo("yo"));
         
-        
-            
+        //BORRAR
+        //System.out.println(repoMensa.deleteById("5bb41cbc7eb5891d7c18e699"));
         }
+            
+        
     }
 //NO DEBE DE CAMBIAR EL MAIN
